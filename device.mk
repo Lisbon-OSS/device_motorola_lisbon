@@ -271,5 +271,23 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     $(LOCAL_PATH)
 
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service-lazy
+
+PRODUCT_PACKAGES += \
+    hostapd \
+    wpa_supplicant \
+    android.hardware.wifi.supplicant@1.4.vendor \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor \
+    libnetutils.vendor
+
+PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/lisbon/lisbon-vendor.mk)
