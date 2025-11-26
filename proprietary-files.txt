@@ -917,9 +917,7 @@ vendor/lib64/hw/libSoftGatekeeper.so
 
 # Graphics
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.2-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/android.hardware.graphics.composer@2.2-service.rc
 vendor/etc/init/vpud.rc
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/egl/egl.cfg
