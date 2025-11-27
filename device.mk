@@ -144,8 +144,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Fastbootd
+# Fastboot
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
 # Fingerprint
