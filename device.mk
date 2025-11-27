@@ -100,6 +100,28 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    libbluetooth_audio_session \
+    android.hardware.bluetooth@1.1.vendor
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.6.vendor \
+    libexpat.vendor
+
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor
+
+PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
+    libpng.vendor \
+    libexif \
+    libexif.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
@@ -125,10 +147,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -136,11 +174,26 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor \
+    libgatekeeper.vendor \
+    libkeymaster41.vendor \
+    libkeymaster4_1support.vendor \
+    libsoft_attestation_cert.vendor \
+    libpuresoftkeymasterdevice.vendor
+
 # Keystore
 PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.km41.xml \
+    android.system.wifi.keystore@1.0.vendor \
     libcppbor_external.vendor \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0
 
 # Media
 PRODUCT_PACKAGES += \
@@ -165,6 +218,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
+
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-V1-ndk.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -210,6 +279,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3.vendor
+
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -263,6 +346,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.frameworks.sensorservice@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -270,6 +363,18 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     $(LOCAL_PATH)
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # VNDK
 PRODUCT_PACKAGES += \
