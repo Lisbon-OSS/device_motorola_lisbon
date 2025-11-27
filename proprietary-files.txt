@@ -669,13 +669,9 @@ vendor/lib/libconnfem.so
 vendor/lib64/libconnfem.so
 
 # Display
-vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib/hw/displaypanel.default.so
-vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.12-impl.so
 vendor/lib/mt6785/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/libaal_cust.so
@@ -707,10 +703,8 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib/vendor.mediatek.hardware.pq@2.9.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/displaypanel.default.so
 vendor/lib64/hw/hwcomposer.mt6785.so
-vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.12-impl.so
 vendor/lib64/mt6785/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/libaal_cust.so
