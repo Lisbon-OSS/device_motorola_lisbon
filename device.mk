@@ -342,7 +342,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6785 \
     init.ago.rc \
-    init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mmi.backup.trustlet.rc \
@@ -354,7 +353,6 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6785.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init_connectivity.rc \
     ueventd.mt6785.rc
 
 PRODUCT_COPY_FILES += \
