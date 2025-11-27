@@ -83,6 +83,13 @@ function blob_fixup {
         vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/mnld)
+            ;&
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so)
+            ;&
+        vendor/lib64/libcam.utils.sensorprovider.so)
+            grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            ;;
     esac
 }
 
