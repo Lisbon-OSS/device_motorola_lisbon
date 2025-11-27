@@ -1095,8 +1095,6 @@ vendor/bin/hw/motorola.hardware.input@1.0-service
 vendor/bin/hw/motorola.hardware.sensorscalibrate@1.0-service
 vendor/bin/kpgather
 vendor/bin/kpreadwrite
-vendor/bin/tcmd
-vendor/bin/tcmdhelp
 vendor/etc/init/com.motorola.hardware.display.panel@1.0-service.rc
 vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
 vendor/etc/init/motorola.hardware.fdrcontrol@1.2-service.rc
@@ -1108,11 +1106,7 @@ vendor/etc/motorola/12m/Factory_SW_Logo.jpg
 vendor/etc/motorola/12m/TM655_driver_Command.ini
 vendor/etc/motorola/12m/cqatest_config.xml
 vendor/etc/motorola/12m/key_code_map.txt
-vendor/etc/motorola/12m/tcmd_leds.cfg
 vendor/etc/motorola/sensors/mot_sensor_settings.json
-vendor/etc/motorola/tcmd/cid_template.dat
-vendor/etc/motorola/tcmd/cid_template.locked
-vendor/etc/motorola/tcmd/cid_template.unlocked
 vendor/etc/vintf/manifest/fdrcontrol_1.2_manifest.xml
 vendor/etc/vintf/manifest/motorola.hardware.input@1.0-service.xml
 vendor/framework/com.fingerprints.extension.jar
@@ -1123,7 +1117,6 @@ vendor/lib/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib/com.motorola.hardware.display.panel@1.0.so
 vendor/lib/motorola.hardware.camera.imgtuner@1.0.so
 vendor/lib/motorola.hardware.sensorscalibrate@1.0.so
-vendor/lib/motorola.hardware.tcmd@1.0.so
 vendor/lib/sensors.moto.so
 vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so
 vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
