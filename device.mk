@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek
+    android.hardware.memtrack-service.mediatek-mali
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -279,11 +279,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_PACKAGES += \
-    nfc_nci_nxp.vendor \
-    ese_spi_nxp.vendor \
-    ese_client.vendor \
-    vendor.nxp.nxpnfclegacy@1.0.vendor \
-    vendor.nxp.eventprocessor@1.0.vendor \
+    nfc_nci_nxp \
+    ese_spi_nxp \
     vendor.nxp.nxpese@1.0.vendor \
     vendor.nxp.nxpnfc@2.0.vendor
 
