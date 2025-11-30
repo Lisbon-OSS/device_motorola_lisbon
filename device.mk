@@ -190,6 +190,20 @@ PRODUCT_PACKAGES += \
     libruy.vendor \
     libpcap.vendor
 
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-services \
+    moto-ims-ext \
+    mtk-moto-ims-ext \
+    mtk-moto-telephony-ext \
+    mtk-telephony-common
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
