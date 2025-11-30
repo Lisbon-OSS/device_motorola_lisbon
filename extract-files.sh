@@ -79,9 +79,10 @@ function blob_fixup {
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.12-impl.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-            ;;
+            ;&
         vendor/lib*/libmtkcam_stdutils.so)
+            ;&
+        vendor/lib*/hw/audio.primary.mt6785.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/bin/mnld)
