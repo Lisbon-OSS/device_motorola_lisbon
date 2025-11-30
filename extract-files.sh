@@ -97,6 +97,9 @@ function blob_fixup {
             printf '\x28\x02\x80\x52' | dd of="$2" bs=1 seek=$((0x3e828)) count=4 conv=notrunc
             printf '\x28\x02\x80\x52' | dd of="$2" bs=1 seek=$((0x3e8f4)) count=4 conv=notrunc
             ;;
+        vendor/lib64/sensors.moto.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
