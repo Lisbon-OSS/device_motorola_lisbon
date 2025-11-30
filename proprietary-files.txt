@@ -23,8 +23,6 @@ vendor/etc/ap_gain.bin
 vendor/etc/ap_gain_mmul.bin
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/audio.r_submix.mt6785.so
 vendor/lib/audio_common-aidl-cpp.so
@@ -32,7 +30,6 @@ vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_param_parser-vnd.so
-vendor/lib/libaudioclient_aidl_conversion.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
 vendor/lib/libaudiocomponentengine_vendor.so
@@ -40,7 +37,6 @@ vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
-vendor/lib/libaudiofoundation.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
@@ -56,8 +52,6 @@ vendor/lib/libspeech_enh_lib.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
 vendor/lib64/audio_common-aidl-cpp.so
@@ -65,7 +59,6 @@ vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
 vendor/lib64/libaudiocomponentengine_vendor.so
@@ -73,7 +66,6 @@ vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
@@ -213,10 +205,7 @@ vendor/bin/autobt
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/etc/bt_stack_debug.conf
 vendor/etc/bt_stack_level6.conf
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
 vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
@@ -227,10 +216,7 @@ vendor/lib/libbt-vendor.so
 vendor/lib/libtpa.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
@@ -869,7 +855,6 @@ vendor/lib/egl/libMEOW_data.so
 vendor/lib/egl/libMEOW_gift.so
 vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
@@ -887,7 +872,6 @@ vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/hw/gralloc.default.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
@@ -1008,11 +992,9 @@ vendor/etc/init/tetheroffloadservice.rc
 # Media
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
-vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/jpegtool
 vendor/bin/vpud
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
 vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -1106,7 +1088,6 @@ vendor/lib/libpkip.so
 vendor/lib/libscltm.so
 vendor/lib/libthha.so
 vendor/lib64/libakl.so
-vendor/lib64/libbinderdebug.so
 vendor/lib64/libdynamiclog.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libhwmwrapper.so
@@ -1115,7 +1096,6 @@ vendor/lib64/liblog_vendor.so
 vendor/lib64/libmemsic.so
 vendor/lib64/libminiui.so
 vendor/lib64/libscltm.so
-vendor/lib64/libz_stable.so
 
 # Motorola
 vendor/bin/hw/com.motorola.hardware.display.panel@1.0-service
@@ -1196,7 +1176,6 @@ vendor/lib/libneuron_graph_delegate.mtk.so
 vendor/lib/libneuropilot_hal_utils.so
 vendor/lib/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib/libtflite_mtk.so
-vendor/lib/libvpx.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/mt6785/libmcv_runtime.mtk.so;SYMLINK=vendor/lib64/libmcv_runtime.mtk.so
@@ -1266,7 +1245,6 @@ vendor/etc/powercontable.xml
 vendor/etc/powerscntbl.xml
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/libpowerhal.so
