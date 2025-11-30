@@ -92,6 +92,11 @@ function blob_fixup {
         vendor/lib64/libcam.utils.sensorprovider.so)
             grep -q "libshim_sensors.so" "$2" || "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/lib64/libmtkcam_featurepolicy.so)
+            # evaluateCaptureConfiguration()
+            printf '\x28\x02\x80\x52' | dd of="$2" bs=1 seek=$((0x3e828)) count=4 conv=notrunc
+            printf '\x28\x02\x80\x52' | dd of="$2" bs=1 seek=$((0x3e8f4)) count=4 conv=notrunc
+            ;;
     esac
 }
 
