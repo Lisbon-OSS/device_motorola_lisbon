@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Build Hacks
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 DEVICE_PATH := device/motorola/lisbon
 
 # Architecture
