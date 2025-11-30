@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
     libtinycompress
 
 PRODUCT_PACKAGES += \
-    BesLoudness
+    BesLoudness \
+    MtkInCallService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
